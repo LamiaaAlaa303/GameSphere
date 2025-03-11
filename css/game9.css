@@ -1,0 +1,23 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background: url("../images/pokemon-bg.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative; 
+}
+#board{
+background-image: url("../images/flappybirdbg.png");
+}
+#startButton{
+    padding: 10px;
+    color:white;
+    background-color: rgb(153, 100, 202);
+    transition: all 1s;
+    margin: 10px 0px;
+}
+#startButton:hover{
+    color:black;
+    background-color: rgb(255, 71, 246);   
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="../css/all.min.css" />
+       <link rel="stylesheet" href="../css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Nerko+One&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="../css/games.css">
+       <title>Games</title>
+       <link rel="shortcut icon" href="../images/logo-sm.png" />
+</head>
+<body>
+    <div class="loading d-none">
+        <div class="loader"></div>
+      </div>
+  <section id="games" class="">
+    <div class="container">
+      <div class="d-flex justify-content-around p-3">
+      
+      <div class="login log">
+     <h2 class="text-light my-3" id="username"></h2>
+    </div>
+    
+    <a href="../index.html" class="text-light mt-2"><button id="logout" class="btn btn1 p-3" >Logout</button></a>
+  
+  </div>
+    </div>
+  <header>
+    <img src="../images/wraper.png" class="w-100" alt="wraper">
+  </header>
+
+      <nav class="navbar navbar-expand-lg position-sticky top-0 p-1 z-3 col-md-6 col-lg-9  ">
+        <div class="container">
+          <h5 class="mb-0 text-uppercase text-white fs-3">
+            <img src="../images/logo-sm.png" class="w-25" alt="logo"> Game Reviews
+          </h5>
+          <button class="btn btn1" id="btnGames">My Created Games</button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"  card-category="mmorpg">mmorpg</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  card-category="shooter">shooter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " card-category="sailing">sailing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " card-category="permadeath">permadeath</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " card-category="superhero">superhero</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " card-category="pixel">pixel</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+ 
+      <div class="display-games">
+        <div class="container">
+          <div id="displayGames" class="row gy-3 mt-4">
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="game-details" class="d-none">
+     <div class="container">
+      <div class="game-head mt-3 d-flex justify-content-between align-items-center">
+        <h1 class="text-capitalize">Details Game</h1>
+        <button id="btnClose" class="btn-close "></button>
+      </div>
+      <div id="game">
+        
+      </div>
+     </div>
+    </section>
+   
+
+      <script src="../js/jquery-3.7.1.min.js"></script>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/games.js"></script>
+</body>
+</html>
+

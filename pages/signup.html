@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="../css/all.min.css" />
+       <link rel="stylesheet" href="../css/bootstrap.min.css">
+       <link rel="stylesheet" href="../css/style.css">
+        <title>Smart Login</title>
+       <link rel="shortcut icon" href="../images/1000_F_261902858_onbxqSHf193X4w7e8fdRH8vjjoT3vOVZ.jpg" type="image/x-icon"> 
+    </head>
+    <body>
+      <div id="home">
+       <div class="container">
+        <div class="login w-75 m-auto text-center mt-5 p-5 ">
+          <div class="head-sign my-3">
+            <h1 class=" ">Smart Login System</h1>
+            <h1 class=" ">Smart Login System</h1>
+          </div>
+         
+         <div>
+            <input type="text" class="form-control mt-5 mb-3" name="name" id="username" placeholder="Enter your Name" oninput="nameVaildation()"/>
+            <div class="alert text-danger d-none" id="nameMessage"> enter only letters and spaces (at least 3 letters) </div>
+         <input type="email"   class="form-control my-3" name="email" id="useremail" placeholder="Enter your Email" oninput="emailvaildation()"/>
+         <div class="alert text-danger d-none" id="emailMessage">Enter Valid Email Address, (user@user.com) </div>
+         <div class=" text-danger d-none " id="emailexist">This mail is exist </div>
+         <input type="password" class="form-control my-3" name="password" id="userpassword" placeholder="Enter your password" oninput="passwordVaildation()"/>
+         <div class="alert text-danger d-none" id="passMessage">Password must be at least one uppercase letter,one lowercase letter, one digit and one special character  </div>
+         <p class="text-danger text-center d-none" id="incorrect">All inputs is required</p>
+         <p class="text-success text-center d-none" id="correct">Success</p>
+        </div>
+        <button id="signup" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+        <p class="text-light">You have an account? <a class="text-info" href="../index.html"> Sign in</a></p>
+        
+      </div>
+       </div>
+      </div>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/signup.js"></script>
+    </body>
+</html>
